@@ -1,0 +1,60 @@
+{
+  "customer": [
+    {
+      "name": "maahi",
+      "description": "gadsdghfjkfgfgjn",
+      "status": "open",
+      "rate": 334,
+      "balance": 8899,
+      "id": 1
+    },
+    {
+      "name": "xcxc",
+      "description": "hfvfgvj",
+      "status": 3,
+      "rate": "jbvhk",
+      "balance": "fvg",
+      "id": 2
+    },
+    {
+      "name": "hgj",
+      "description": "gkghkk",
+      "status": 4,
+      "rate": "gjgvh",
+      "balance": "hkjg",
+      "id": 3
+    },
+    {
+      "name": "xdsfdgh",
+      "description": "fgdh",
+      "status": 2,
+      "rate": "xdch",
+      "balance": "hfhhhhhhh",
+      "id": 4
+    },
+    {
+      "name": "xcxv",
+      "description": "hfvfgvj",
+      "status": "Open",
+      "rate": "jbvhk",
+      "balance": "vkhbv,l",
+      "id": 5
+    },
+    {
+      "name": "dfsfg",
+      "description": "sgdsdbvmkgvfjufgtiyouoyugoyiyuytut",
+      "status": "Open",
+      "rate": "6666",
+      "balance": "777",
+      "id": 7
+    },
+    {
+      "name": "Maahi",
+      "description": "gadsdghfjkfgfgjn",
+      "status": "Open",
+      "rate": "3454",
+      "balance": "536",
+      "id": 8
+    }
+  ]
+}

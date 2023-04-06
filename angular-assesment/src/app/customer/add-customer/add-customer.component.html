@@ -1,0 +1,50 @@
+
+<h2>ADD CUSTOMER</h2>
+<div class="customer-form">
+    
+        <form [formGroup]="customerForm" (ngSubmit)= "changeBtn ? addFormData():updateFormData()" >
+          <div class="form-main">
+          <div class="top-form">
+            <div class="form-group">
+              <label for="exampleInputName " class="label">NAME</label>
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Name" formControlName="name" > 
+              <div class="text-danger" *ngIf="!customerForm.get('name')?.valid && customerForm.get('name')?.touched &&customerForm.get('name')?.errors?.['required']">This Field is Required.</div> 
+              <div class="text-danger" *ngIf="!customerForm.get('name')?.valid && customerForm.get('name')?.touched&& customerForm.get('name')?.errors?.['pattern']">Length should be min 3 and max 25 characters</div> 
+            </div>
+            <div class="form-group">
+                <label for="exampleInputdescription" class="label">DESCRIPTION</label>
+                <input type="text" class="form-control" id="exampleInputdescription" aria-describedby="descriptionHelp" placeholder="Enter Description" formControlName="description" >  
+                <div class="text-danger" *ngIf="!customerForm.get('description')?.valid && customerForm.get('description')?.touched &&customerForm.get('description')?.errors?.['required']">This Field is Required.</div> 
+              <div class="text-danger" *ngIf="!customerForm.get('description')?.valid && customerForm.get('description')?.touched&& customerForm.get('description')?.errors?.['pattern']">Length should be min 3 and max 150 characters</div>  
+
+              </div>
+              <div class="form-group">
+                <ng-select formControlName="status" class="select-status">
+                    <ng-option *ngFor="let item of status" [value]="item.name">{{item.name}}</ng-option>
+                 </ng-select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputRate " class="label">RATE</label>
+                <input type="text" class="form-control" id="exampleInputRate" aria-describedby="rateHelp" placeholder="Enter Rate" formControlName="rate"> 
+                <div class="text-danger" *ngIf="!customerForm.get('rate')?.valid && customerForm.get('rate')?.touched &&customerForm.get('rate')?.errors?.['required']">This Field is Required.</div> 
+              <div class="text-danger" *ngIf="!customerForm.get('rate')?.valid && customerForm.get('rate')?.touched&& customerForm.get('rate')?.errors?.['pattern']">Enter valid Rate</div>  
+   
+              </div>
+              <div class="form-group">
+                <label for="exampleInputBalance " class="label">BALANCE</label>
+                <input type="text" class="form-control" id="exampleInputBalance" aria-describedby="balanceHelp" placeholder="Enter Balance" formControlName="balance">   
+                <div class="text-danger" *ngIf="!customerForm.get('balance')?.valid && customerForm.get('balance')?.touched &&customerForm.get('balance')?.errors?.['required']">This Field is Required.</div> 
+              <div class="text-danger" *ngIf="!customerForm.get('balance')?.valid && customerForm.get('balance')?.touched&& customerForm.get('balance')?.errors?.['pattern']">Enter valid Balance</div>  
+    
+              </div>  
+            </div>  
+            <div class="bottom-form">       
+              <button type="button" class="btn btn-secondary" (click)="closeForm()" >Cancel</button>
+            <button type="submit" class="btn btn-primary" [disabled]="customerForm.invalid" >{{changeBtn?'Save':'Update'}}</button>
+           
+          </div> 
+        </div>
+          </form>
+
+    
+</div>

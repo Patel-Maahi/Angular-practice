@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.table-main{
+    overflow: auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.table{
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+}
+
+.table-data{
+    padding: 20px;
+    border: none;
+}
+::placeholder{
+    color: #A1A9B8;
+    font-weight: 400;
+font-size: 14px;
+}
+.table-head{
+    padding: 10px;
+    background-color: #EBF0FA;
+    color: #464F60;
+    font-size: 12px;
+}
+tr:nth-child(even){
+    background-color: #EBF0FA;  
+}
+.table-name{
+    color: #171C26;
+    font-size: 14px;
+    font-weight: 500;
+}
+.table-id{
+    color: #171C26;
+    font-weight: 500;
+font-size: 14px;
+}
+.table-description{
+    color: #464F60;
+    font-weight: 400;
+font-size: 14px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.table-status{
+    color: #4F5AED;  
+}
+.table-rate{
+color: #464F60;
+font-weight: 400;
+font-size: 14px;
+}
+.table-balance{
+    color: #D12953;
+    font-weight: 400;
+font-size: 14px;
+}
+.edit{
+color: #868FA0;
+}
+.delete{
+    color: #D12953;
+    margin-left: 10px;
+}
+.add-btn{
+    background-color: #2264E5;
+    color: white;
+    border-radius: 6px;
+    padding: 6px 12px;
+    border: none;
+    margin-left: 10px;
+}
+.search{
+    width: 164px;
+height: 32px;
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(104, 113, 130, 0.16);
+border-radius: 6px;
+padding: 6px 12px;
+border: 1px solid rgb(184, 184, 184)
+}
+.select{
+    width: 100px;
+    height: 30px;
+}
+.right-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,2 @@
+<app-add-customer *ngIf="isFormVisible" (addFormDataEvt)="addCustomer($event)"  (closeFormEvt)="closeForm($event)" [editData]="editData" (updateFormDataEvt)="updateCustomer($event)" ></app-add-customer>
+<app-customer-list (openFormEvt)="openForm($event)"   [customerData]="customerData"  (deleteDataEvt)="deleteCustomer($event)" (editDataEvt)="editCustomer($event)" (filterDataEvt)="filterCustomerData($event)" ></app-customer-list>
