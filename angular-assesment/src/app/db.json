@@ -1,60 +1,36 @@
 {
   "customer": [
     {
-      "name": "maahi",
+      "name": "Maahimhnwwww",
       "description": "gadsdghfjkfgfgjn",
-      "status": "open",
-      "rate": 334,
-      "balance": 8899,
-      "id": 1
+      "status": "Inactive",
+      "rate": "4545",
+      "balance": "76899999999",
+      "id": 14
     },
     {
-      "name": "xcxc",
-      "description": "hfvfgvj",
-      "status": 3,
-      "rate": "jbvhk",
-      "balance": "fvg",
-      "id": 2
+      "name": "sweta",
+      "description": "gadsdghfjkfgfgjn",
+      "status": "Error",
+      "rate": "4545",
+      "balance": "-98990",
+      "id": 15
     },
     {
-      "name": "hgj",
-      "description": "gkghkk",
-      "status": 4,
-      "rate": "gjgvh",
-      "balance": "hkjg",
-      "id": 3
-    },
-    {
-      "name": "xdsfdgh",
-      "description": "fgdh",
-      "status": 2,
-      "rate": "xdch",
-      "balance": "hfhhhhhhh",
-      "id": 4
-    },
-    {
-      "name": "xcxv",
+      "name": "bvjh",
       "description": "hfvfgvj",
       "status": "Open",
-      "rate": "jbvhk",
-      "balance": "vkhbv,l",
-      "id": 5
+      "rate": "45454",
+      "balance": "455454",
+      "id": 17
     },
     {
-      "name": "dfsfg",
-      "description": "sgdsdbvmkgvfjufgtiyouoyugoyiyuytut",
-      "status": "Open",
-      "rate": "6666",
-      "balance": "777",
-      "id": 7
-    },
-    {
-      "name": "Maahi",
-      "description": "gadsdghfjkfgfgjn",
-      "status": "Open",
-      "rate": "3454",
-      "balance": "536",
-      "id": 8
+      "name": "sweta",
+      "description": "gadsdghfjkfgfgjndcgfdhfghghkhj;ljk;;kgbvbvbvbvbvb",
+      "status": "Error",
+      "rate": "4545",
+      "balance": "0",
+      "id": 18
     }
   ]
 }

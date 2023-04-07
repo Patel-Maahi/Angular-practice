@@ -22,7 +22,15 @@ export class AddCustomerComponent implements OnInit,OnChanges {
   ]
   customerForm!: FormGroup;
   
-  constructor() { }
+  constructor() {
+    this.customerForm = new FormGroup ({
+      name: new FormControl("" , [Validators.required , Validators.pattern(/^[a-zA-Z0-9]{3,25}$/)]),
+      description : new FormControl("",[Validators.required ,Validators.pattern(/^([a-zA-Z0-9$&+,:;=?@#|'<>.-^*()%!\s]){3,150}$/)]),
+      status:new FormControl("Status",Validators.required ),
+      rate:new FormControl("",[Validators.required,Validators.pattern(/[0-9]/) ]),
+      balance: new FormControl("",[Validators.required,Validators.pattern(/[0-9]/) ]),
+    })
+   }
   ngOnChanges(){
     if(this.editData){
       this.setFormValue()
@@ -30,13 +38,7 @@ export class AddCustomerComponent implements OnInit,OnChanges {
     } 
   }
   ngOnInit() {
-    this.customerForm = new FormGroup ({
-      name: new FormControl("" , [Validators.required , Validators.pattern(/^[a-zA-Z0-9]{3,25}$/)]),
-      description : new FormControl("",[Validators.required ,Validators.pattern(/^([a-zA-Z0-9$&+,:;=?@#|'<>.-^*()%!\s]){3,150}$/)]),
-      status:new FormControl("Status",Validators.required ),
-      rate:new FormControl("",[Validators.required,Validators.pattern(/[0-9$]/) ]),
-      balance: new FormControl("",[Validators.required,Validators.pattern(/[0-9$-]/) ]),
-    })
+    this.customerForm.reset()
     this.changeBtn = true
   }
   //emitting customer form values
@@ -47,6 +49,7 @@ export class AddCustomerComponent implements OnInit,OnChanges {
   //emitting boolean value false to close the form
   closeForm(){
    this.closeFormEvt.emit(this.formNotVisisble)
+   this.customerForm.reset()
   }
   //setting form values
   setFormValue(){

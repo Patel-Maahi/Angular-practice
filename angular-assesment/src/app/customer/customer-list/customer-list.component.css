@@ -7,6 +7,7 @@ html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 .table-main{
     overflow: auto;
@@ -58,6 +59,8 @@ font-size: 14px;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
+max-width: 50px;
+
 }
 .table-status{
     color: #4F5AED;  
@@ -68,7 +71,7 @@ font-weight: 400;
 font-size: 14px;
 }
 .table-balance{
-    color: #D12953;
+    
     font-weight: 400;
 font-size: 14px;
 }
@@ -104,4 +107,35 @@ border: 1px solid rgb(184, 184, 184)
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.status-open{
+    color: #4F5AED;
+    background-color: #F0F1FA;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.status-error{
+    color: #D12953;
+    background-color:#eed9df ;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.status-success{
+    color: #14804A;
+    background-color: #c8e0d4;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.status-inactive{
+    color: #5A6376;
+    background-color:#c2cee7 ;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.negative-value{
+    color: #D12953;
+}
+.positive-value{
+    color: green;
 }

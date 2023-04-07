@@ -19,7 +19,7 @@
 
               </div>
               <div class="form-group">
-                <ng-select formControlName="status" class="select-status">
+                <ng-select formControlName="status" class="select-status" [clearable]="false">
                     <ng-option *ngFor="let item of status" [value]="item.name">{{item.name}}</ng-option>
                  </ng-select>
               </div>

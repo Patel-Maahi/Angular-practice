@@ -1,7 +1,7 @@
 
 <div class="menu">
     <div class="select-status">
-        <ng-select (change)="filterData($event)"  class="select">
+        <ng-select (change)="filterData($event)"  class="select" [clearable]="false" >
             <ng-option *ngFor="let item of status" [value]="item.name">{{item.name}}</ng-option>
          </ng-select>
     </div>
@@ -30,9 +30,18 @@
                     <td class="table-data table-id">{{data.id}}</td>
                     <td class="table-data table-name" >{{data.name}}</td>
                     <td class="table-data table-description " >{{data.description}}</td>
-                    <td class="table-data table-status " >{{data.status}}</td>
-                    <td class="table-data table-rate" >{{data.rate}}</td>
-                    <td class="table-data table-balance" >{{data.balance}}</td>
+                    <td class="table-data table-status " >
+                        <span *ngIf="data.status=='Open'" class="status-open" >{{data.status}} </span>
+                        <span *ngIf="data.status=='Success'" class="status-success">{{data.status}} </span>
+                        <span *ngIf="data.status=='Error'" class="status-error">{{data.status}} </span>
+                        <span *ngIf="data.status=='Inactive'" class="status-inactive">{{data.status}} </span>
+                    </td>
+                    <td class="table-data table-rate" >{{data.rate|currency}}</td>
+                    <td class="table-data table-balance" >
+                        <span *ngIf="data.balance < 0" class="negative-value" > {{data.balance|currency}}</span>
+                        <span *ngIf="data.balance >= 0" class="positive-value" > {{data.balance|currency}}</span>
+
+                       </td>
                     <td class="table-data" >
                        
                         <i class="fa-solid fa-pen edit" (click)="editCustomer(data.id)" ></i> 

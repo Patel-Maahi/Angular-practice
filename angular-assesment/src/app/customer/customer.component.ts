@@ -28,7 +28,10 @@ export class CustomerComponent implements OnInit {
    }
    //getting customer data from server
    getCustomer(){
-    this.customerService.getCustomerData().subscribe((res)=>this.customerData=res)
+    this.customerService.getCustomerData().subscribe((res)=>
+    {
+      console.log(res)
+      this.customerData=res})
    }
    //adding customer data to table
   addCustomer(customerData:Customer){
@@ -53,7 +56,8 @@ export class CustomerComponent implements OnInit {
   }
   //filtering customer data from table according to selected value in dropdown
   filterCustomerData(value:any){
-    this.customerData= this.customerData.filter((res: { status: any; })=>res.status==value)
-  }
+
+  //  this.customerData=this.customerData.filter((res: { status: any; })=> res.status==value)
+   }
 
 }

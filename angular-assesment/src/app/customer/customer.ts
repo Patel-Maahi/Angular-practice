@@ -1,5 +1,4 @@
 export interface Customer {
-
     name:string,
     description: string ,
     status : any,

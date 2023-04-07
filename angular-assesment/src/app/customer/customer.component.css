@@ -8,3 +8,10 @@ app-add-customer{
     z-index: 999;
     background-color: #E7E7E7;
 }
+app-customer-list{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}

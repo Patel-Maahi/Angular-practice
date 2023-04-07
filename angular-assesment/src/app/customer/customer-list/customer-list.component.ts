@@ -15,6 +15,7 @@ export class CustomerListComponent implements OnInit {
   searchData:any = ''
   public formVisible:boolean = true
   public status = [
+    
     {id:1,name:'Open'},
     {id:2,name:'Error'},
     {id:3,name:'Inactive'},
