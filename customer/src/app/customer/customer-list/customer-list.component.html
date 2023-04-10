@@ -1,0 +1,58 @@
+
+
+<div class="menu">
+    <div class="select-status">
+        <!-- <ng-select (change)="filterData($event)"  class="select" [clearable]="false" >
+            <ng-option *ngFor="let item of status" [value]="item.name">{{item.name}}</ng-option>
+         </ng-select> -->
+    </div>
+    <div class="right-menu">
+        <!-- <div class="search-data">
+            <input type="text" [(ngModel)]="searchData" placeholder="Search here..." class="search" >
+            
+        </div> -->
+        <div class="btn"><button (click)="openForm()" class="add-btn" >Add</button></div>
+    </div>
+    </div>
+    
+    <div class="table-main">
+        <table class="table">
+            <thead>
+                <th class="table-head" >#</th>
+                <th class="table-head">NAME</th>
+                <th class="table-head">DESCRIPTION</th>
+                <th class="table-head">STATUS</th>
+                <th class="table-head">RATE</th>
+                <th class="table-head">BALANCE</th>
+                <th class="table-head">ACTION</th>
+            </thead>
+            <!-- <tbody>
+                <tr *ngFor="let data of customerData">
+                    <td class="table-data table-id">{{data.id}}</td>
+                    <td class="table-data table-name" >{{data.name}}</td>
+                    <td class="table-data table-description " >{{data.description}}</td>
+                    <td class="table-data table-status " >
+                        <span *ngIf="data.status=='Open'" class="status-open" >{{data.status}} </span>
+                        <span *ngIf="data.status=='Success'" class="status-success">{{data.status}} </span>
+                        <span *ngIf="data.status=='Error'" class="status-error">{{data.status}} </span>
+                        <span *ngIf="data.status=='Inactive'" class="status-inactive">{{data.status}} </span>
+                    </td>
+                    <td class="table-data table-rate" >{{data.rate|currency}}</td>
+                    <td class="table-data table-balance" >
+                        <span *ngIf="data.balance < 0" class="negative-value" > {{data.balance|currency}}</span>
+                        <span *ngIf="data.balance >= 0" class="positive-value" > {{data.balance|currency}}</span>
+
+                       </td>
+                    <td class="table-data" >
+                       
+                        <i class="fa-solid fa-pen edit" (click)="editCustomer(data.id)" ></i> 
+                        <i class="fa-solid fa-trash-can delete"  (click)="deleteCustomer(data.id)"></i>
+                    </td>
+                </tr>
+            </tbody> -->
+    
+        </table>
+    </div>
+
+    
+<app-customer-form *ngIf="isFormVisible" ></app-customer-form>
